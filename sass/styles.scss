@@ -1,0 +1,179 @@
+@use 'variables' as v;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: v.$Light-Gray;
+    font-family: v.$Font-Karla;
+    font-size: 16px;
+}
+.main-container{
+    margin: 75px 0;
+    box-shadow: 1px 2px 20px v.$Grayish-blue;
+    border-radius: 8px;
+    overflow: hidden;
+    @media (min-width: 900px){
+      margin: 165px 0;
+    }
+    .section-container{
+      width: 315PX;
+      // height: 730px;
+      @media (min-width: 900px){
+        width: 635px;
+        height: 475px;
+
+        &__container{
+          display: flex;
+        }
+      }
+        // =========== Div1 ============== //
+        &__div1{
+          height: 270px;
+          background-color: white;
+          padding: 20px;
+          @media (min-width: 900px){
+            height: 215px;
+            padding: 35px;
+          }
+        }
+        &__div1-title{
+          color: v.$Cyan;
+          margin-bottom: 30px;
+          font-size: 20px;
+          @media (min-width: 900px){
+            font-size: 1.45em;
+            margin-bottom: 26px;
+          }
+        }
+        &__div1__subtitle{
+          color: v.$Bright-Yellow;
+          font-size: 15px;
+          margin-bottom: 25px;
+          @media (min-width: 900px){
+            font-size: 1.1em;
+            margin-bottom: 14px;
+          }
+        }
+        &__div1-paragraph{
+          color: v.$Grayish-blue;
+          line-height: 27px;
+          font-size: 14px;
+          @media (min-width: 900px){
+            font-size: 1em;
+            line-height: 27px;
+          }
+        }
+
+        // =========== Div2 ============== //
+        &__div2{
+          //border: 1PX solid;
+          height: 230px;
+          background-color: v.$Cyan;
+          color: v.$Light-Gray;
+          padding: 25px;
+          @media (min-width: 900px){
+            width: 318px;
+            height: 260px;
+            padding: 40px;
+          }
+          
+        }
+        &__div2-title{
+          font-size: 18px;
+          margin-bottom: 25px;
+          color: white;
+          @media (min-width: 900px){
+            font-size: 1.1em;
+            margin-bottom: 20px;
+          }
+
+        }
+        &__div2-container{
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          margin-bottom: 8px;
+          @media (min-width: 900px){
+            margin-bottom: 8px;
+          }
+          
+        }
+        &__div2-container-price{
+          font-size: 32px;
+          color: white;
+        }
+        &__div2-container-span{
+          font-size: 16px;
+          
+        }
+        &__div2-paragraph{
+         margin-bottom: 18px;
+          @media (min-width: 900px){
+            font-size: 0.98em;
+            margin-bottom: 24px;
+          }
+        }
+       
+        &__div2-button-btn{
+          height: 50px;
+          width: 100%;
+          background-color: v.$Bright-Yellow;
+          border: none;
+          border-radius: 8px;
+          color: white;
+          font-size: 16px;
+          font-weight: 700;
+          box-shadow: 10px 10px 10px v.$Cyan;
+          transition: 300ms;
+        }
+        &__div2-button-btn:hover{
+          background: transparent;
+          border: 1px solid white;
+          transition: 300ms;
+        }
+
+        // =========== Div3 ============== //
+        &__div3{
+          //border: 1px solid;
+          height: 230px;
+          background-color: v.$Cyan-light;
+          color: v.$Light-Gray;
+          padding: 25px;
+          @media (min-width: 900px){
+            width: 318px;
+            height: 260px;
+            padding: 40px;
+          }
+          
+        }
+        &__div3-title{
+          font-size: 18px;
+          margin-bottom: 18px;
+          color: white;
+          @media (min-width: 900px){
+            font-size: 1.1em;
+          }
+        }
+        &__div3-list-li{
+          list-style-type: none;
+          line-height: 20px;
+          font-weight: 300;
+          @media (min-width: 900px){
+            font-size: 0.89em;
+          }
+        }
+    }
+}
+
+// =================== footer ===================== /
+.attribution { 
+  margin-bottom: 20px;
+  font-size: 15px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
